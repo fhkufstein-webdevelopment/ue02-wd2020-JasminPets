@@ -1,12 +1,64 @@
-
-
-
 body {
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:14px;
-    margin:0;
-    padding:0;
 }
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 990px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.level_1>li>a{
+    color: #337ab7;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+}
+
+.level_1>li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.level_1>li:hover>ul{
+    display: block;
+}
+
+.level_2{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 150px;
+    padding-left: 0;
+}
+
+.level_2>li{
+    padding: 15px 0 15px 15px;
+}
+
+.level_2>li>a{
+    color: #337ab7;
+    text-decoration: none;
+}
+
+
+.level_2>li:hover{
+    background-color: #337ab7;
+}
+
+.level_2>li:hover a{
+    color: white;
+}
+
+
+
+
+
 
 .logo {
     font-size:30px;
@@ -34,7 +86,7 @@ body {
     height:15px;
 
 }
-
+/*:before für das $ was VOR dem Logo steht? Was ist content?*/
 .logo:before {
     content:"\f155";
     font-family: "FontAwesome", sans-serif;
